@@ -24,7 +24,7 @@ class Product {
   quantity: number;
 
   // 1 produto pode estar em muitos pedidos
-  // @OneToMany(() => OrdersProducts, orders_products => orders_products.product)
+  @OneToMany(() => OrdersProducts, order_products => order_products.product)
   order_products: OrdersProducts[];
 
   @CreateDateColumn()
