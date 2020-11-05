@@ -1,4 +1,4 @@
-- Clientes
-- Produtos
-- Pedidos
-- PedidosProdutos (id, id_produto, quantidade, valor)
+- Customers
+- Products
+- Orders (customer_id)
+- OrdersProducts (id, product_id, order_id, quantity, price)
